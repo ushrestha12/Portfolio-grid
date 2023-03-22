@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA_Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital@1&family=Roboto:ital@1&family=Source+Serif+Pro:wght@300&family=Space+Mono:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <div class="logo">
+            <h2>Portfolio</h2>
+          </div>
+          <ul>
+            <li><a href="">About me</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+          <a href="#" class="mobile">&#9776;</a>
+        </nav>
+        <h1>Header</h1>
+      </header>
+      <aside>
+        <div class="about">
+          <h1>About me</h1>
+          
+          <div class="post">
+           <img src="images/umashrestha.png" alt="profile" class="box-img">
+           <h2>Uma Shrestha</h2>
+           <h3>Front-End Developer in Process</h3>
+           <p>I am a student at wake-tech and a full time mom of two kids. I moved from Nepal to United State 6 yrs back. I am pursing my education in web developer as to pursue career opportunities in the world of technology. In my free time, I love to bake while listening to good music and read books.</p>
+         </div>
+        </div>
+        
+      </aside>
+      <main>
+        <div class="project">
+          <h1>Featured Projects</h1>
+          <div class="meta">
+            <h3>Vicious Cycles</h3>
+          </div>
+          <div class="post">
+            <img src="images/612.jpg" alt="description of image">
+            <p>This was my first project which I completed after learning about Html and CSS during 1st semester.</p>
+          <a class="btn"href="https://wcet.waketech.edu/ushrestha/WEB140/Project%201/index.html" target="Vicious Cycles">ushrestha</a>
+          </div>
+          <div class="meta">
+            <h3>Pleaure Island</h3>
+          </div>
+          <div class="post">
+            <img src="images/ferriswheel.jpg" alt="description of image">
+            <p>This was my second project which I completed after learning about CSS Grid during 2nd semester.</p>
+          <a class="btn"href="https://wcet.waketech.edu/ushrestha/WEB125/lesson10/index.html" target="Pleasure Island">ushrestha</a>
+          </div>
+        </div>
+        <div class="items">
+          <h1>Student</h1>
+          <img src="images/student.jpeg" alt="student">
+          
+          <div class="label">
+           <p>Wake Technical Community College</p>
+            <p>Web Developer-2nd semester</p>
+            <p>Full time student</p>
+          </div>
+        <div class="items">
+           <h1>Education</h1>
+           <img src="images/education.jpeg" alt="education">
+         <div class="label">
+            <h3>Tribhuwan University- Nepal</h3>
+            <p>Bachelor degree in Business Administration, 2009</p>
+          </div>
+          
+        </div>
+      </main>
+      <footer>
+        <div class="contact">
+          <h2>Let's Keep in Touch!</h2>
+
+        <!-- Social media and contact links. Add or remove any networks. -->
+          <ul class="contact-list">
+            <li><a href="mailto:email@gmail.com">mailme@gmail.com</a></li>
+            <li><a href="http://yourwebsite.com" target="_blank">ushrestha.com</a></li>
+            <li><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <script>
+      let menu= document.querySelector('nav ul')
+      let hamburger= document.querySelector('nav .mobile')
+      hamburger.addEventListener('click',function(){
+        menu.classList.toggle('show')
+      })
+    </script>
+  </body>
+</html>
